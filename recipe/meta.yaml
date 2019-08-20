@@ -1,0 +1,34 @@
+{% set version = "0.1" %}
+{% set name= "bluesky-kafka" %}
+{% set sha256 = "78918ad7f7acab045b12661cedd1552be0eb886966d93780d12eec03da354c82" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  url: https://github.com/NSLS-II/{{ name }}/archive/v{{ version}}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  noarch: python
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+
+requirements:
+  host:
+    - python
+    - pip
+  run:
+    - python
+    - bluesky
+    - kafka-python
+test:
+  imports:
+    - bluesky_kafka
+
+about:
+  home: https://github.com/NSLS-II/bluesky-kafka
+  license: BSD
+  license_file: LICENSE
+  summary: The bluesky-kafka module.
