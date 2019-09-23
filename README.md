@@ -7,7 +7,7 @@ Package license: BSD
 
 Feedstock license: BSD 3-Clause
 
-Summary: The bluesky-kafka module.
+Summary: The bluesky-kafka module
 
 
 

@@ -3,7 +3,7 @@
 {% set sha256 = "78918ad7f7acab045b12661cedd1552be0eb886966d93780d12eec03da354c82" %}
 
 package:
-  name: {{ name }}
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
@@ -31,4 +31,4 @@ about:
   home: https://github.com/NSLS-II/bluesky-kafka
   license: BSD
   license_file: LICENSE
-  summary: The bluesky-kafka module.
+  summary: The bluesky-kafka module
