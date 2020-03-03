@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/NSLS-II/{{ name }}/archive/v{{ version}}.tar.gz
+  url: https://github.com/NSLS-II/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -22,6 +22,7 @@ requirements:
   run:
     - python
     - bluesky
+    - confluent-kafka
 test:
   imports:
     - bluesky_kafka
