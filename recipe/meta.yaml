@@ -1,14 +1,14 @@
-{% set version = "0.1" %}
+{% set version = "0.1.0" %}
 {% set name= "bluesky-kafka" %}
-{% set sha256 = "78918ad7f7acab045b12661cedd1552be0eb886966d93780d12eec03da354c82" %}
+{% set sha256 = "712f28aee3ce455d50d5c1fd47e1f37f5184943eac98234459a97780cbfe1f53" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/NSLS-II/{{ name }}/archive/v{{ version}}.tar.gz
-  sha256: {{ sha256 }}
+  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
+  sha256: "{{ sha256 }}"
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
   run:
     - python
     - bluesky
-    - kafka-python
+    - python-confluent-kafka
 test:
   imports:
     - bluesky_kafka
