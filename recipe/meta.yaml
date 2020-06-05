@@ -22,7 +22,7 @@ requirements:
   run:
     - python
     - bluesky
-    - confluent-kafka
+    - python-confluent-kafka
 
 test:
   imports:
