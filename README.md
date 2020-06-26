@@ -1,9 +1,9 @@
 About bluesky-kafka
 ===================
 
-Home: https://github.com/NSLS-II/bluesky-kafka
+Home: https://github.com/bluesky/bluesky-kafka
 
-Package license: BSD
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
