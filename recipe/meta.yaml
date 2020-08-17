@@ -1,19 +1,19 @@
-{% set version = "0.1.0" %}
-{% set name= "bluesky-kafka" %}
-{% set sha256 = "712f28aee3ce455d50d5c1fd47e1f37f5184943eac98234459a97780cbfe1f53" %}
+{% set version = "0.2.0" %}
+{% set name = "bluesky-kafka" %}
+{% set sha256 = "1e16997240c2ca9ca7feea79810a63ff70afa35a177c777818ee65fdd2aebd9b" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: "{{ sha256 }}"
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 2
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -33,3 +33,4 @@ about:
   license: BSD-3-Clause
   license_file: LICENSE
   summary: The bluesky-kafka module
+  dev_url: https://github.com/bluesky/bluesky-kafka
