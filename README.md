@@ -5,11 +5,11 @@ Home: https://github.com/bluesky/bluesky-kafka
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/nsls-ii-forge/bluesky-kafka-feedstock/blob/master/LICENSE.txt)
 
 Summary: The bluesky-kafka module
 
-
+Development: https://github.com/bluesky/bluesky-kafka
 
 Current build status
 ====================
