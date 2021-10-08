@@ -1,6 +1,6 @@
-{% set version = "0.4.0" %}
+{% set version = "0.6.0" %}
 {% set name = "bluesky-kafka" %}
-{% set sha256 = "55d8d2e231b851471d031a1473a0dad2f52f5cff0f6c7a7387809d9f91c911f5" %}
+{% set sha256 = "beab97dead2597eb475124d024b2c9a81fc7ba035eb87d7c08d8934c707cbe4e" %}
 
 package:
   name: {{ name|lower }}
